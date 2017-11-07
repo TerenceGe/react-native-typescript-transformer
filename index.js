@@ -135,8 +135,9 @@ const tsConfig = (() => {
 const compilerOptions = Object.assign(tsConfig.compilerOptions, {
   sourceMap: true,
   inlineSources: true,
-  "module": "es6",
-  "target": "es6",
+  module: "es6",
+  target: "es6",
+  jsx: "react-native",
 })
 
 module.exports.transform = function(src, filename, options) {

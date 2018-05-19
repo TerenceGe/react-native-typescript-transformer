@@ -1,3 +1,47 @@
+## 1.2.5
+
+Improve error message when failure to find tsconfig.json file
+
+Contribution by @vyshkant in #58
+
+## 1.2.4
+
+Fix tsconfig.json resolution for Monorepos.
+
+Contribution by @ali-hk in #54
+
+## 1.2.3
+
+Fix react native version sniffing.
+
+Contribution by @wsxyeah
+
+## 1.2.2
+
+Remove `crypto` dependency. It's bundled with node.
+
+## 1.2.1
+
+Fix minor bug with ast source map transformation
+
+## 1.2.0
+
+Add implementation for getCacheKey
+
+## 1.1.7
+
+Add source map support for RN >= 0.52
+
+## 1.1.6
+
+Add basic support for RN >= 0.52
+
+Contribution by @olofd
+
+## 1.1.5
+
+Borked publish, do not use.
+
 ## 1.1.4
 
 Improve README.md

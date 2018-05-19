@@ -21,8 +21,8 @@ Make sure your tsconfig.json has these compiler options:
     "moduleResolution": "node",
   },
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+  ],
 }
 ```
 
@@ -35,7 +35,7 @@ Add this to your rn-cli.config.js (make one if you don't have one already):
 ```js
 module.exports = {
   getTransformModulePath() {
-    return require.resolve('react-native-typescript-transformer')
+    return require.resolve('react-native-typescript-transformer');
   },
   getSourceExts() {
     return ['ts', 'tsx'];
@@ -45,8 +45,8 @@ module.exports = {
 
 If you need to run the packager directly from the command line, run the following
 
-    react-native start --transformer node_modules/react-native-typescript-transformer/index.js --sourceExts ts,tsx
-    
+    react-native start --config /absolute/path/to/rn-cli.config.js
+
 
 ### Step 4: Write TypeScript code!
 
